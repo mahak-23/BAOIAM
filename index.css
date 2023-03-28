@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+
+/* ++++++++++++++++++header +++++++++++++++++++++++ */
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    color: rgb(2, 2, 97);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+.navbar{
+    width:95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    overflow: hidden;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-right: 5rem;
+}
+.nav-branding{
+    box-sizing: border-box;
+    align-items: center;
+    overflow: hidden;
+}
+.logo{
+    width: 10rem;
+    height: auto;
+    align-self: center;
+}
+hr{
+    border:none;
+    height: 20px;
+ 	width: 100%;
+	height: 50px;
+	margin-top: 3rem;
+	border-bottom: 2px solid rgb(235, 228, 228);
+	/* box-shadow: 0 20px 20px -20px gray; */
+    /* margin: -50px auto 10px;  */
+}
+
+.home, .company, .ReferEarn, .courses, .blogs, .contact{
+   height: 220px;
+   margin-top: 1rem; 
+  /* border: 1px solid rgb(255, 237, 237); */
+}
+.company, .ReferEarn, .courses, .blogs, .contact{
+    margin-top: 0;
+}
+
+@media(max-width:1280px){
+    .container{
+        width: 100%;
+    }
+}
+
+/* ++++++++++++++++++Footer +++++++++++++++++++++++ */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color:  rgb(8, 1, 24);
+    padding: 60px;
+    position: relative;
+}
+.footer-col{
+    width: 20%;
+}
+.contact-div{
+    width: 35%;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-image: linear-gradient(45deg, #fa2424,#fb8721);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #dfdcdc;
+    display: block;
+}
+
+.footer-col ul li a:hover{
+    background: linear-gradient(45deg, #fa2424,#fb8721);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  color: #ffffff;
+  margin: 0 10px 10px 10px;
+}
+.footer-col .social-links a:hover{
+    background: linear-gradient(45deg, #fa2424,#fb8721);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+.contact-text{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    color: #dfdcdc;
+    display: block;
+}
+
+.footer-col ul li i{
+    height: 22px;
+    width: 22px;
+    background-image: linear-gradient(45deg, #fa2424,#fb8721);
+    margin: 0 10px 10px 0px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.follow{
+    color: #ffffff;
+    font-size: 16px
+}
+
+.footer-copyright{
+    background-image: linear-gradient(45deg, #fa2424,#fb8721);
+    width: 100vw;
+    padding: 10px 10px 10px 10px;
+    color: #ffffff;
+}
+.footer-copyright p{
+    font-size: 14px;
+    word-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    padding-left:40px ;
+}
+/*responsive */
+
+@media(max-width:767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:574px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+/* Scroll top */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 0px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding:-5px 15px; /* Some padding */
+    font-size: 20px; /* Increase font size */
+    width: 40px;
+    height: 35px;
+  }
+  .box.arrow-top:after {
+    content: " ";
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    border-top: none;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 15px solid red;
+  }
+  
